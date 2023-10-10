@@ -3,10 +3,11 @@
     <div class="box-card">
         <H1>POKEMONS</H1>
         <div class="container-pokemon">
-            <div class="pokemon-card">
+         
+            <div *ngFor="let poke of results" class="pokemon-card">
                 <div class="pokemon-header">
                     <img src="../../../assets/images/pikachu.png" alt="Pikachu">
-                    <h2 class="pokemon-name">Pikachu</h2>
+                    <h2 class="pokemon-name">{{poke.name}}</h2>
                 </div>
                 <div class="pokemon-info">
                     <p><strong>Tipo:</strong> Elétrico</p>
@@ -15,16 +16,6 @@
                 </div>
                 
             </div>
-            <div class="pokemon-card">
-                <div class="pokemon-header">
-                    <img src="../../../assets/images/blastoise.jpg" alt="Blastoise">
-                    <h2 class="pokemon-name">Blastois</h2>
-                </div>
-                <div class="pokemon-info">
-                    <p><strong>Tipo:</strong> Agua</p>
-                    <p><strong>Nível:</strong> 50</p>
-                    <p><strong>Peso:</strong> 101,1 kg</p>
-                </div>
-        </div>
+   
     </div>
 </div>

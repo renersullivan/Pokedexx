@@ -18,8 +18,10 @@
     
 }
 .container-pokemon{
+    max-height: 400px; 
+    overflow: auto;
     display: flex;
-    
+    flex-direction: column;
 }
 .pokemon-card {
     display: flex;
