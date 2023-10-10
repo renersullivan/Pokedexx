@@ -20,15 +20,26 @@ export class HomeComponent implements OnInit {
   constructor(private http:HttpClient){
 
   }
-  
+
  public ngOnInit():void{
-  this.http.get<any>('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0').subscribe(data=>{
-    this.results = data.results
-  })
-  console.log('nasceu !')
-    
+  this.buscaPokemons()
+
   }
-  
+
+  public buscaPokemons():void{
+    this.http.get<any>('https://pokeapi.co/api/v2/pokemon').subscribe(data=>{
+      this.results = data.results
+      console.log(data.results)
+    })
+
+  }
+
+  public clickBuscaPokemonDetalhe(poke:Pokemon):void{
+    this.http.get<any>(poke.url).subscribe( result =>{
+      console.log(result)
+    })
+
+  }
 
 }
 

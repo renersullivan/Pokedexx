@@ -3,19 +3,19 @@
     <div class="box-card">
         <H1>POKEMONS</H1>
         <div class="container-pokemon">
-         
+
             <div *ngFor="let poke of results" class="pokemon-card">
                 <div class="pokemon-header">
                     <img src="../../../assets/images/pikachu.png" alt="Pikachu">
                     <h2 class="pokemon-name">{{poke.name}}</h2>
                 </div>
                 <div class="pokemon-info">
-                    <p><strong>Tipo:</strong> Elétrico</p>
-                    <p><strong>Nível:</strong> 25</p>
-                    <p><strong>Peso:</strong> 6.0 kg</p>
+                  <div class="pokemon-btn" (click)="clickBuscaPokemonDetalhe(poke)">
+                    ver detalhes
+                  </div>
                 </div>
-                
+
             </div>
-   
+
     </div>
 </div>
