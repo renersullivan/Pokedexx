@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   }
 
   public buscaPokemons():void{
-    this.http.get<any>('https://pokeapi.co/api/v2/pokemon').subscribe(data=>{
+    this.http.get<any>('https://pokeapi.co/api/v2/pokemon?limit=151').subscribe(data=>{
       this.results = data.results
       console.log(data.results)
     })
@@ -35,11 +35,10 @@ export class HomeComponent implements OnInit {
   }
 
   public clickBuscaPokemonDetalhe(poke:Pokemon):void{
-    this.http.get<any>(poke.url).subscribe( result =>{
-      console.log(result)
-    })
+   
+    }
 
   }
 
-}
+
 
