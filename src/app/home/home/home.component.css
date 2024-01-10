@@ -25,7 +25,7 @@
 }
 .pokemon-card {
     display: flex;
-    width: 33%;
+    width: 23%;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -43,7 +43,7 @@
 }
 
 .pokemon-name {
-    color: #e44035;
+    color: #262222;
 }
 
 .pokemon-info p {

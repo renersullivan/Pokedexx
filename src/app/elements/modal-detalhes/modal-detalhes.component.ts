@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-modal-detalhes',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ModalDetalhesComponent {
 
+  @Input() pokemon: any;
+
+  constructor() { }
 }
+
