@@ -1,6 +1,12 @@
 .container {
    background-image: url("../../../assets/images/mobile-pokemon.jpg");
    height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+
 }
 
 
@@ -32,9 +38,7 @@
     margin: 0;
     padding: 0;
 }
-.pokemon-card {
-    display: flex;
-   
+.pokemon-card {  
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -56,7 +60,7 @@
 .pokemon-header img {
     width: 100px;
     height: 100px;
-    padding: 0px 15px 0px 0px;
+   
 }
 
 .pokemon-name {
