@@ -1,26 +1,22 @@
 <div class="container">
-    <img src="../../../assets/images/0 - CAPA.jpg" alt="pokemon_capa">
-    <div class="box-card">
-        <H1>POKEMONS</H1>
-       <div class="card-pokemon">
-        <div class="container-pokemon">
+  <H1>POKEMONS</H1>
+  <div class="card-pokemon">
+    <div class="container-pokemon">
 
-          <div *ngFor="let poke of results" class="pokemon-card">
-            <ul>
-              <li *ngFor="let pokemon of pokemon">
-                <button >{{ poke.name }}</button>
-              </li>
-            </ul>
-              <div class="pokemon-header">
-                  <img src={{poke.imageURL}}>
-                  <h2 class="pokemon-name">{{poke.name}}</h2>
-               
-              </div>
-             
-              </div>
-
+      <div *ngFor="let poke of results" class="pokemon-card">
+        <ul class="ul-pokemon">
+          <li *ngFor="let pokemons of pokemon">
+            <button >{{ poke.name }}</button>
+          </li>
+        </ul>
+        <div class="pokemon-header">
+            <img src={{poke.imageURL}}>
+            <h2 class="pokemon-name">{{poke.name}}</h2>
+            
           </div>
+          
+      </div>
 
-       </div>
     </div>
+  </div>
 </div>

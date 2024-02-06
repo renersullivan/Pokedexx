@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ModalDetalhesComponent } from 'src/app/elements/modal-detalhes/modal-detalhes.component';
 
 export type listResults = Pokemon[]
 
@@ -19,7 +20,8 @@ export class HomeComponent implements OnInit {
   pokemon:[] | undefined
   public results!:listResults
 
-  constructor(private http:HttpClient){
+  constructor(private http:HttpClient
+    ){
 
   }
 
@@ -44,11 +46,13 @@ export class HomeComponent implements OnInit {
     return parseInt(parts[parts.length - 1], 10);
   }
   
-  public clickBuscaPokemonDetalhe(poke:Pokemon):void{
+  public clickBuscaPokemonDetalhe():void{
    
     }
 
   }
+
+
 
 
 
