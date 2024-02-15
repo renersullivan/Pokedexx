@@ -27,7 +27,7 @@
 
 }
 .container-pokemon{
-    max-height: 755px;
+    max-height: 534px;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -87,6 +87,8 @@
 
 
 #divBusca{
+    margin: 200px 1px 50px 0px;
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border-radius: 10px;
     width: 619px;
