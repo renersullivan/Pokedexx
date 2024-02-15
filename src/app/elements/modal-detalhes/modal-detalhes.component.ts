@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ModalDetalhesComponent {
 
-  @Input() pokemon: any;
+
 
   constructor() { }
 }

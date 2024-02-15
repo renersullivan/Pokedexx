@@ -9,7 +9,7 @@
 
       <div *ngFor="let poke of results" class="pokemon-card">
        
-        <div class="pokemon-header">
+        <div class="pokemon-header" routerLink="modal">
             <img src={{poke.imageURL}}>
             <h2 class="pokemon-name">{{poke.name}}</h2>
             
