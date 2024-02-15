@@ -27,7 +27,7 @@
 
 }
 .container-pokemon{
-    max-height: 534px;
+    max-height:495px;
     overflow: auto;
     display: flex;
     justify-content: center;
@@ -52,7 +52,7 @@
 .pokemon-card{
     display: flex;
     flex-direction: row;
-    width: calc(25% - 13px);
+    width: calc(23% - 57px);
     justify-content: center;
     align-items: center;
 
@@ -77,7 +77,7 @@
   color:black
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
     .card-pokemon{
         overflow: hidden;
 
@@ -87,7 +87,7 @@
 
 
 #divBusca{
-    margin: 200px 1px 50px 0px;
+    margin: 18px 1px 3px 0px;
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border-radius: 10px;
