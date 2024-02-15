@@ -8,12 +8,15 @@ import { HomeComponent } from './home/home/home.component';
 import { ModalDetalhesComponent } from './elements/modal-detalhes/modal-detalhes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 @NgModule({
   declarations: [
     AppComponent,
  
     HomeComponent,
-      ModalDetalhesComponent
+      ModalDetalhesComponent,
+     
+     
   ],
   imports: [
     BrowserModule,
