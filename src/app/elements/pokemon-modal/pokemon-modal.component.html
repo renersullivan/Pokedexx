@@ -1,0 +1,7 @@
+<div class="modal-background" (click)="closeModal()"></div>
+<div class="modal-content">
+  <div class="pokemon-details">
+    <img [src]="selectedPokemon?.imageURL" alt="Pokemon Image">
+    <h2>{{ selectedPokemon?.name }}</h2>
+  </div>
+</div>

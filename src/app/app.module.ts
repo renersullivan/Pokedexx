@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home/home.component';
-import { ModalDetalhesComponent } from './elements/modal-detalhes/modal-detalhes.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PokemonModalComponent } from './elements/pokemon-modal/pokemon-modal.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
  
     HomeComponent,
-      ModalDetalhesComponent,
+    PokemonModalComponent,
+    
      
      
   ],

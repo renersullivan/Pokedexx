@@ -7,17 +7,14 @@
   <div class="card-pokemon">
     <div class="container-pokemon">
 
-      <div *ngFor="let poke of results" class="pokemon-card"routerLink="modal">
-        
-       
-        <div class="pokemon-header" >
-            <img src={{poke.imageURL}}>
-            <h2 class="pokemon-name">{{poke.name}}</h2>
-            
-          </div>
-          
+      <div *ngFor="let poke of results" class="pokemon-card" (click)="openModal(poke)">
+        <div class="pokemon-header">
+          <img [src]="poke.imageURL" alt="Pokemon Image">
+          <h2 class="pokemon-name">{{ poke.name }}</h2>
+        </div>
       </div>
-
+      
+      
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ModalDetalhesComponent } from 'src/app/elements/modal-detalhes/modal-detalhes.component';
+
 
 export type listResults = Pokemon[]
 
@@ -17,8 +17,18 @@ imageURL: any |undefined;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ 
+  selectedPokemon: any;
+
+  openModal(pokemon: any) {
+    this.selectedPokemon = pokemon;
+    console.log('abriu aki')
+  }
+  
+
   pokemon:[] | undefined
   public results!:listResults
+ modal: any;
 
   constructor(private http:HttpClient
     ){
@@ -27,6 +37,7 @@ export class HomeComponent implements OnInit {
 
  public ngOnInit():void{
   this.buscaPokemons()
+  this.openModal(this.pokemon)
 
   }
 
