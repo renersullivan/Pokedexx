@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class PokemonModalComponent {
   @Input() selectedPokemon: any;
+poke: any;
 
   closeModal() {
     this.selectedPokemon = null;
