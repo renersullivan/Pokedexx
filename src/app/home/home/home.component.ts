@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PokemonModalComponent } from 'src/app/elements/pokemon-modal/pokemon-modal.component';
 
 
 export type listResults = Pokemon[]
@@ -21,6 +23,7 @@ export class HomeComponent implements OnInit {
   selectedPokemon: any;
 
   openModal(pokemon: any) {
+    this.dialog.open(PokemonModalComponent,{data:pokemon})
     this.selectedPokemon = pokemon;
     console.log('abriu aki')
   }
@@ -30,15 +33,15 @@ export class HomeComponent implements OnInit {
   public results!:listResults
  modal: any;
 
-  constructor(private http:HttpClient
+  constructor(private http:HttpClient,public dialog: MatDialog
     ){
 
   }
 
  public ngOnInit():void{
   this.buscaPokemons()
-  this.openModal(this.pokemon)
-
+  // this.openModal(this.pokemon)
+  // this.pokemon
   }
 
   public buscaPokemons(): void {

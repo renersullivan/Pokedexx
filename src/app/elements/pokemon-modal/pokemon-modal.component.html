@@ -1,7 +1,11 @@
 <div class="modal-background" (click)="closeModal()"></div>
 <div class="modal-content">
   <div class="pokemon-details">
-    <img [src]="selectedPokemon?.imageURL" alt="Pokemon Image">
-    <h2>{{ selectedPokemon?.name }}</h2>
+    <p> {{pokemonDetail.name}}</p>
+    <img [src]="pokemonDetail.sprites.front_default" />
+     <div *ngFor="let habilidade of pokemonDetail.abilities">
+      {{habilidade.ability.name}}
+    </div>
+   
   </div>
 </div>
