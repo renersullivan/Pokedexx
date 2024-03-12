@@ -16,6 +16,9 @@
     padding: 20px;
     border-radius: 5px;
     z-index: 1000;
+    width: 500px;
+    height: 500px;
+    background-image: url("");
   }
   
  
@@ -24,13 +27,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.abilidades{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}  
 .image-card {
   display: flex;
   justify-content: center;
@@ -41,9 +39,16 @@
 }
 .image-card img{
  
-    width: 150px;
-    height: 150px;
-  
- 
+  width:  auto;
+  height: auto;
 }
+
+.abilidades{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+ 
+
   
