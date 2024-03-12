@@ -1,11 +1,27 @@
 <div class="modal-background" (click)="closeModal()"></div>
 <div class="modal-content">
   <div class="pokemon-details">
-    <p> {{pokemonDetail.name}}</p>
-    <img [src]="pokemonDetail.sprites.front_default" />
-     <div *ngFor="let habilidade of pokemonDetail.abilities">
-      {{habilidade.ability.name}}
+    <div class="title">
+      <p>Nome: {{pokemonDetail.name}}</p><p> ID: {{pokemonDetail.id}}</p>
     </div>
+    <div class="image-card">
+      <img [src]="pokemonDetail.sprites.front_default" />
+    </div>
+     <div *ngFor="let habilidade of pokemonDetail.abilities">
+      <div class="abilidades">
+        <p>Abilidades: </p>
+        {{habilidade.ability.name}}
+        {{habilidade.slot }}
+     </div>
+    </div>
+    <div class="type">
+      <p>Shiny:</p>
+      <img [src]="pokemonDetail.sprites.back_shiny" />
+      <img [src]="pokemonDetail.sprites.front_shiny" />
+    </div>
+
+   
+    <img [src]="pokemonDetail.sprites.front_shiny" />
    
   </div>
 </div>

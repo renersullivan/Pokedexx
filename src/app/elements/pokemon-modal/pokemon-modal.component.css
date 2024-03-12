@@ -18,8 +18,32 @@
     z-index: 1000;
   }
   
-  .pokemon-details img {
-    width: 200px;
-    height: auto;
-  }
+ 
+ 
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.abilidades{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+ 
+}
+.image-card img{
+ 
+    width: 150px;
+    height: 150px;
+  
+ 
+}
   
