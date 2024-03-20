@@ -1,7 +1,7 @@
 .container {
    background-image: url("../../../assets/images/CAPA.jpg");
    background-size: cover;
-   height: 100%;
+   height: auto;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -121,4 +121,63 @@
     float:left;
   }
 
+  .pokeGift{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 
+  .fighting {
+    background-color: #ce3f6a;
+    }
+    .psychic {
+    background-color: #f97077;
+    }
+    .poison {
+    background-color: #ab6ac8;
+    }
+    .dragon {
+    background-color: #096dc3;
+    }
+    .ghost {
+    background-color: #5269ab;
+    }
+    .dark {
+    background-color: #595365;
+    }
+    .ground {
+    background-color: #d97746;
+    }
+    .fire {
+    background-color: #fe9c53;
+    }
+    .fairy {
+    background-color: #ec8fe7;
+    }
+    .water {
+    background-color: #4d90d5;
+    }
+    .flying {
+    background-color: #8fa8de;
+    }
+    .normal {
+    background-color: #9098a2;
+    }
+    .rock {
+    background-color: #c6b889;
+    }
+    .electric {
+    background-color: #f4d23b;
+    }
+    .bug {
+    background-color: #90c02c;
+    }
+    .grass {
+    background-color: #63bb5c;
+    }
+    .ice {
+    background-color: #73cebf;
+    }
+    .steel {
+    background-color: #5a8fa1;
+    }
