@@ -1,3 +1,11 @@
+export interface Pessoa {
+  nome: string,
+  idade: string
+}
+ 
+
+
+
 export interface pokemonDetailInterface {
     abilities: Ability[]
     base_experience: number

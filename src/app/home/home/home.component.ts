@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
   }
 
   public buscaPokemons(): void {
-    this.http.get<any>('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0').subscribe(data => {
+    this.http.get<any>('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0').subscribe(data => {
       this.results = data.results.map((pokemon: any) => {
         const pokemonId = this.extractIdFromUrl(pokemon.url); // Extrai o ID do Pokémon da URL
         pokemon.imageURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`;

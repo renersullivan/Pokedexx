@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, Input } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ResultAbility } from 'src/app/interfaces/ability-list.interface';
 import { pokemonDetailInterface } from 'src/app/interfaces/pokemon-detail.interface';
+import { DetalhesHabilidadeComponent } from '../detalhes-habilidade/detalhes-habilidade.component';
+
 
 @Component({
   selector: 'app-pokemon-modal',
@@ -12,6 +15,8 @@ import { pokemonDetailInterface } from 'src/app/interfaces/pokemon-detail.interf
 export class PokemonModalComponent {
 
   pokemonDetail!: pokemonDetailInterface;
+  ability!:ResultAbility
+ 
 
   @Input()
    selectedPokemon: any;
@@ -26,7 +31,8 @@ export class PokemonModalComponent {
     this.http.get<pokemonDetailInterface>(this.data.url).subscribe(results => {
       this.pokemonDetail = results;
     })
-    
+   
+ 
   }
 
   closeModal() {
